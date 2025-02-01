@@ -1,10 +1,10 @@
 === Simply Static - The WordPress Static Site Generator ===
 Contributors: patrickposner
 Tags: static site generator, performance, security, jamstack
-Requires at least: 6.3
+Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 3.2.5
+Stable tag:  3.2.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -246,6 +246,30 @@ Simply Static creates a static copy of your WordPress site that is intended to b
 3. Diagnostics
 
 == Changelog ==
+
+=  3.2.5.4 =
+
+* added option to optionally include feed URLs (default is off)
+* set generate_404 page to off on default settings
+* extended Elementor integration to auto-include missing CSS files
+
+= 3.2.5.3 =
+
+* downgraded WP Background Processing package to 1.3.1 again (issues with ajax)
+* responsive design for admin UI
+* improved Basic Auth Handling for different server types (NGINX, Apache, Windows IIS)
+* fixed automated feed handling on running exports
+
+= 3.2.5.2 =
+
+* upgraded WP Background Processing package
+* fixed typo in admin UI
+* increased interval between batches to 2 seconds (from 1 second)
+
+= 3.2.5.1 =
+
+* XML sitemap inclusion optional for single exports
+* fixed _load_textdomain_just_in_time error
 
 = 3.2.5 =
 
